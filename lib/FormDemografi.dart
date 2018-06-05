@@ -6,9 +6,12 @@ class FormDemografi extends StatefulWidget {
 }
 
 class _FormDemografiState extends State<FormDemografi> {
-  final TextEditingController controller1 = new TextEditingController();
-  final TextEditingController controller2 = new TextEditingController();
-  final TextEditingController controller3 = new TextEditingController();
+  final TextEditingController namaCon = new TextEditingController();
+  final TextEditingController jkCon = new TextEditingController();
+  final TextEditingController usiaCon = new TextEditingController();
+  final TextEditingController pendidikanCon = new TextEditingController();
+  final TextEditingController pekerjaanCon = new TextEditingController();
+  final TextEditingController emailCon = new TextEditingController();
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -23,12 +26,12 @@ class _FormDemografiState extends State<FormDemografi> {
         ),
         child: new ListView(
           children: <Widget>[
-            new FormDemografiList(icons: Icons.people ,controller: controller1,title: "Nama Lengkap",),
-            new FormDemografiList(icons: Icons.people,controller: controller2,title: "Jenis Kelamin",),
-            new FormDemografiList(icons: Icons.calendar_today,controller: controller2,title: "Usia",),
-            new FormDemografiList(icons: Icons.business,controller: controller2,title: "Pendidikan",),
-            new FormDemografiList(icons: Icons.work,controller: controller2,title: "Pekerjaan",),
-            new FormDemografiList(icons: Icons.email,controller: controller2,title: "Email",),
+            new FormDemografiList(icons: Icons.people ,controller: namaCon,title: "Nama Lengkap",),
+            new FormDemografiList(icons: Icons.people,controller: jkCon,title: "Jenis Kelamin",),
+            new FormDemografiList(icons: Icons.calendar_today,controller:usiaCon,title: "Usia",),
+            new FormDemografiList(icons: Icons.business,controller: pendidikanCon,title: "Pendidikan",),
+            new FormDemografiList(icons: Icons.work,controller: pekerjaanCon,title: "Pekerjaan",),
+            new FormDemografiList(icons: Icons.email,controller: emailCon,title: "Email",),
             new Padding(
               padding: new EdgeInsets.only(top: 20.0)
             ),

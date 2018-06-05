@@ -3,10 +3,6 @@ class KontakPetugas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("Kontak Petugas"),
-       backgroundColor: Colors.pink,        
-      ),
       body: 
           new Container(      
         decoration: BoxDecoration(

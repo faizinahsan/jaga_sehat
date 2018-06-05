@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'FirstPage.dart' as first;
-import 'SecondPage.dart' as second;
+import 'KontakPetugas.dart' as kontakPetugas;
 
 class HomePage extends StatefulWidget {
   @override
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         controller: tabController,
           tabs: <Widget>[
             new Tab(icon: new Icon(Icons.home), ),
-            new Tab(icon: new Icon(Icons.settings), ),
+            new Tab(icon: new Icon(Icons.info), ),
           ],
         ),
       ),
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
        controller: tabController,
       children: <Widget>[
       new first.FirstPage(),
-       new second.SecondPage(),        
+      new kontakPetugas.KontakPetugas(),       
       ],       
      ),
     );
