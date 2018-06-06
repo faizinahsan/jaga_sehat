@@ -43,6 +43,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
   Widget build(BuildContext context) {
     return new Scaffold(
       backgroundColor: Color(0xFFF3D6EA),
+      resizeToAvoidBottomPadding: false,
       body: new Stack(
         fit: StackFit.expand,
         children: <Widget>[
